@@ -54,8 +54,18 @@ pylint](http://pylint-messages.wikidot.com/all-messages).
 * It will be reviewed and merged into devel. 
 * After tests and bug fixes, it will be merged into master for release.
 
-
 The reason for this is that `master` will always be ready for end users and be
 stable, without any unexpected bugs and issues (hopefully). `devel` is for
 continuous testing and development and to catch bugs before they reach the end
 user. Everything else is to keep the code history nice and traceable. 
+
+## Some gotchas
+
+* Before you start working on an issue or feature, check your local repo is up
+  to date with the remote. Run `git pull` on `devel`. Or run `git pull origin
+  devel`. Then create a branch and continue working. 
+* Before pushing the changes (but after committing them), do a `git pull origin
+  devel` again to account for changes from others since you began. Then run
+  `git rebase devel <your_branch>`. For more detailed explanation, read `man
+  git-rebase`.
+
