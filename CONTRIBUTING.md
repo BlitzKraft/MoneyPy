@@ -48,7 +48,8 @@ pylint](http://pylint-messages.wikidot.com/all-messages).
 # Git workflow
 
 * All pull requests must be submitted to the devel branch. 
-* Preferred way is to fork the repo (only devel branch, if you are primarily a contributor)
+* Preferred way is to fork the repo (only devel branch, if you are primarily a
+  contributor)
 * Create a branch, to focus on the aspects you wish to work on.
 * Submit a pull request to devel. 
 * It will be reviewed and merged into devel. 
@@ -61,7 +62,7 @@ user. Everything else is to keep the code history nice and traceable.
 
 ## Some gotchas
 
-* Before you start working on an issue or feature, check your local repo is up
+* Before you start working on an issue or feature, check if your local repo is up
   to date with the remote. Run `git pull` on `devel`. Or run `git pull origin
   devel`. Then create a branch and continue working. 
 * Before pushing the changes (but after committing them), do a `git pull origin
